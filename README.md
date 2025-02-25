@@ -1,0 +1,2 @@
+# Training
+Next.js Training
