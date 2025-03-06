@@ -1,7 +1,6 @@
-
 import { createClient } from 'app/utils/supabase/server'
 import { cookies } from 'next/headers'
-import { ReactElement, JSXElementConstructor, ReactNode, ReactPortal } from 'react'
+import React from 'react'
 
 export default async function Page() {
   const cookieStore = await cookies()
@@ -11,8 +10,8 @@ export default async function Page() {
 
   return (
     <ul>
-      {auteurs?.map((nom) => (
-        <li>{nom}</li>
+      {auteurs?.map((auteur, index) => (
+        <li key={index}>{auteur.nom}</li>
       ))}
     </ul>
   )
