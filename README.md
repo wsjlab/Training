@@ -1,3 +1,3 @@
 # Training
 
-Rustcd Training
+Rust Training
