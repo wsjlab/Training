@@ -1,2 +1,3 @@
 # Training
-Next.js Training
+
+Rustcd Training
