@@ -1,0 +1,11 @@
+/workspaces/Training/rust_project/hello_rust/target/debug/deps/libselect-1acbc3b6e731c1f9.rmeta: /home/codespace/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/select-0.5.0/src/lib.rs /home/codespace/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/select-0.5.0/src/document.rs /home/codespace/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/select-0.5.0/src/node.rs /home/codespace/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/select-0.5.0/src/predicate.rs /home/codespace/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/select-0.5.0/src/selection.rs
+
+/workspaces/Training/rust_project/hello_rust/target/debug/deps/libselect-1acbc3b6e731c1f9.rlib: /home/codespace/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/select-0.5.0/src/lib.rs /home/codespace/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/select-0.5.0/src/document.rs /home/codespace/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/select-0.5.0/src/node.rs /home/codespace/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/select-0.5.0/src/predicate.rs /home/codespace/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/select-0.5.0/src/selection.rs
+
+/workspaces/Training/rust_project/hello_rust/target/debug/deps/select-1acbc3b6e731c1f9.d: /home/codespace/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/select-0.5.0/src/lib.rs /home/codespace/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/select-0.5.0/src/document.rs /home/codespace/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/select-0.5.0/src/node.rs /home/codespace/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/select-0.5.0/src/predicate.rs /home/codespace/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/select-0.5.0/src/selection.rs
+
+/home/codespace/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/select-0.5.0/src/lib.rs:
+/home/codespace/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/select-0.5.0/src/document.rs:
+/home/codespace/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/select-0.5.0/src/node.rs:
+/home/codespace/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/select-0.5.0/src/predicate.rs:
+/home/codespace/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/select-0.5.0/src/selection.rs:
