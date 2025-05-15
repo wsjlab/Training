@@ -2,9 +2,8 @@ name: Send Artist of the Week Email
 
 on:
   schedule:
-    # Exécuter toutes les 5 minutes
     - cron: '*/5 * * * *'
-  workflow_dispatch:  # Permet de déclencher manuellement le workflow
+  workflow_dispatch:
 
 jobs:
   send-email:
@@ -14,33 +13,29 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v3
 
+    - name: Debug - Show workspace contents
+      run: |
+        echo "Current directory: $(pwd)"
+        ls -la
+        echo "Rust project directory:"
+        ls -la rust_project/hello_rust/
+
     - name: Set up Rust
       uses: actions-rs/toolchain@v1
       with:
         toolchain: stable
         override: true
 
-    - name: Install dependencies
-      run: cargo build --release
-
-    - name: Check execution time
-      id: check_time
+    - name: Install dependencies and build
       run: |
-        CURRENT_TIME=$(date +%s)
-        WORKFLOW_START_TIME=$(date -d "2025-05-15 00:00:00" +%s)
-        TIME_DIFF=$((CURRENT_TIME - WORKFLOW_START_TIME))
-        if [ $TIME_DIFF -gt 900 ]; then  # 900 seconds = 15 minutes
-          echo "::set-output name=should_run::false"
-        else
-          echo "::set-output name=should_run::true"
-        fi
+        cd rust_project/hello_rust
+        cargo build --release
 
     - name: Send email with Artist of the Week
-      if: steps.check_time.outputs.should_run == 'true'
       env:
         EMAIL: ${{ secrets.EMAIL }}
         EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
         APP_URL: ${{ secrets.APP_URL }}
       run: |
-        echo "Sending email with Artist of the Week..."
+        cd rust_project/hello_rust
         cargo run --bin send_email
